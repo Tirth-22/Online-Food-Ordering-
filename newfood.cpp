@@ -261,7 +261,7 @@ public:
         int mainChoice;
         do {
             clearScreen();
-            cout << "\t\t\t------Tirth & Priyanshu `s Fast Food-------\n\n";
+            cout << "\t\t\t------Tirth`s Fast Food-------\n\n";
             cout << "1) Place New Order\n";
             cout << "2) View Previous Orders\n";
             cout << "3) Exit\n";
@@ -293,7 +293,7 @@ private:
     void placeNewOrder() {
         clearScreen();
         string name;
-        cout << "\t\t\t------Tirth & Priyanshu `s Fast Food-------\n\n";
+        cout << "\t\t\t------Tirth`s Fast Food-------\n\n";
         cout << "Please Enter Your Name: ";
         getline(cin, name);
         
