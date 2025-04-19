@@ -2,7 +2,6 @@
 #include <conio.h>
 using namespace std;
 
-// Base MenuItem class
 class MenuItem {
 protected:
     string name;
@@ -32,7 +31,6 @@ ostream& operator<<(ostream& os, const MenuItem& item) {
     return os;
 }
 
-// Derived classes
 class Pizza : public MenuItem {
     string size;
 public:
@@ -83,7 +81,6 @@ public:
     }
 };
 
-// Order class
 class Order {
     vector<unique_ptr<MenuItem>> items;
     map<string, int> quantities;
@@ -179,7 +176,6 @@ public:
     }
 };
 
-// Menu class
 class Menu {
     map<int, unique_ptr<MenuItem>> pizzaMenu;
     map<int, unique_ptr<MenuItem>> burgerMenu;
@@ -247,7 +243,6 @@ public:
     }
 };
 
-// FastFoodApp class
 class FastFoodApp {
     Menu menu;
     const string orderFilename = "orders.txt";
